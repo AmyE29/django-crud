@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'base.css' %}"/>
+    <title>Flavors</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="{% url 'home' %}">Ice Cream Flavors<a></h1>
+    </header>
+    <div>
+      <h1><a href="{% url 'flavors_new' %}">Add a New Flavor<a></h1>
+    </div>
+    <div>
+      {% block content %}
+      {% endblock content %}
+    </div>
+  </body>
+</html>

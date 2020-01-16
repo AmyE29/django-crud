@@ -4,7 +4,8 @@
   <h2>{{ flavor.name }}</h2>
   <p>{{ flavor.description }}</p>
 </div>
+<div><a href="{% url 'flavors_update' flavor.pk %}">Update Flavor</a>
+</div>
+<div><a href="{% url 'flavors_delete' flavor.pk %}">Delete Flavor</a>
+</div>
 {% endblock content%}
-
-
-
